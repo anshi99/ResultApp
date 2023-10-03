@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>student login</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light"  style="background-color: rgb(41, 180, 133);">
+        <!-- Navbar content -->
+        <div class="text-center mt-1 ms-2">
+          <img src="CBSE-Black.png" height="50px">
+      </div>
+        <div class="mx-auto">
+            <h3  style="color:rgb(12, 11, 11);"><b>Result Managment System</b></h3>
+        </div>
+        
+    </nav>
+    
+    <main>
+
+        <div style="margin-top: 30px; margin-left: 10px;">
+            <a href="/" ><button type="button" class="btn btn-warning">Go Back</button></a>
+        </div>
+
+        <div class="container mt-2 "  >
+
+            <div class="row">
+                <div class="col-8 offset-2">
+
+                    <div class="card">
+                        <div class="card-header text-center">
+                          <i>FIND  YOUR  RESULT </i>
+                        </div>
+                        <div class="card-body text-center">
+                            <form action="/student/login" method="post">
+                                <div class="mb-3">
+                                  <label for="fullname" class="form-label"><b>Full Name</b></label>
+                                  <input type="text" required  class="form-control" placeholder="Enter Full Name" id="fullname" name="fullname" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="rollnumber" class="form-label"><b>Roll Number</b></label>
+                                  <input type="text" required class="form-control" placeholder="Enter Roll Number" name="rollnumber" id="rollnumber">
+                                </div>
+                                <div class="mb-3">
+                                <label class="form-label" for="dob"><b>Date of birth</b></label>
+                                  <input type="date" required class="form-control" name="dob" id="dob">
+                                </div>
+                                <div id="emailHelp" class="form-text">We'll never share your result with anyone else.</div>
+                                <div class="text-center mt-1">
+                                    <button type="submit" class="btn btn-outline-success">Search</button>
+                                    <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                </div>
+                               
+                              </form>
+                        </div>
+                        <div class="card-footer text-muted">
+                          <span><i>Bunch Of Marks Can't Decide Your Future . So Be Cool And Whatever The Result Is Will Fix Next Time</i></span>
+                        </div>
+                      </div>
+    
+                </div>
+            </div>
+            
+
+        </div>
+
+
+
+    </main>
+
+   
+
+  </body>
+</html>
